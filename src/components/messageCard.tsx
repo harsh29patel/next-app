@@ -24,9 +24,10 @@ import { useToast } from "./ui/use-toast"
 import { Message } from "@/model/user"
 import axios from "axios"
 import { ApiResponse } from "@/types/apiResponse"
+
   
 type MessageCardProps = {
-    message : Message;
+    message : Message ;
     onMessageDelete:(messageId: string)=>void
 }
 const MessageCard = ({message , onMessageDelete}:MessageCardProps) => {
